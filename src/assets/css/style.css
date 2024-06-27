@@ -46,6 +46,9 @@ img[alt='logo']{
 ::-webkit-scrollbar{
     display: none;
 }
+section{
+  scroll-margin-block: 5rem;
+}
 
 
 
