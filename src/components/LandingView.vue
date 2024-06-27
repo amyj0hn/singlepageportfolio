@@ -16,11 +16,6 @@
             I am a
             <span>{{ jobTitle[0]?.title }}</span>
           </p>
-          <!-- <div v-else class="d-flex justify-content-center">
-                    <div class="spinner-boarder" role="status">
-
-                    </div>
-                </div> -->
           <Spinner v-else />
         </div>
       </div>
@@ -36,6 +31,7 @@ import { computed, onMounted, ref } from "vue";
 import { useStore } from "vuex";
 const store = useStore();
 const cnt = ref(-1);
+//This line of code accesses your data as an array
 const jobTitle = computed(() => store.state.jobTitle);
 function repeat() {
   try {
