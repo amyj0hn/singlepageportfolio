@@ -9,7 +9,9 @@
     <section class="row" id="resume">
 <ResumeView/>
     </section>
-    <section class="row" id="projects"></section>
+    <section class="row" id="projects">
+<ProjectsView/>
+    </section>
     <section class="row" id="testimonials"></section>
     <section class="row" id="reachme"></section>
   </div>
@@ -20,13 +22,15 @@
 import LandingView from '@/components/LandingView.vue'
 import AboutMeView from '@/components/AboutMeView.vue'
 import ResumeView from '@/components/ResumeView.vue'
+import ProjectsView from '@/components/ProjectsView.vue'
+
 
 
 export default {
 
   name: 'HomeView',
   components: {
-    LandingView, AboutMeView, ResumeView
+    LandingView, AboutMeView, ResumeView, ProjectsView
   }
 }
 
