@@ -43,6 +43,7 @@ export default createStore({
     async fetchJobTitle(context){
       try{
         let {jobTitle} = await (await axios.get(portfolioURL)).data
+        console.log(jobTitle);
         context.commit("setJobTitle", jobTitle)
 
       }
